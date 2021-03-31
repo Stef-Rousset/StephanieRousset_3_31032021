@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $mid-grey;
+  background-color: darken($light-grey, 15%);
   img {
     width: 10%;
   }

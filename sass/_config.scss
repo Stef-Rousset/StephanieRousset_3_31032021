@@ -4,11 +4,10 @@ $title-font: 'Shrikhand', cursive;
 $text-font: 'Roboto', sans-serif;
 
 // Define colors
-$mid-grey: #DDDDDD;
 $light-grey: #F6F6F6;
-$purple: #9356DC;
-$pink: #FF79DA;
-$green: #99E2D0;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-ternary: #99E2D0;
 
 body {
   font-size: 65%; /* environ 10px */
