@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  justify-content: center;
+  img {
+  margin: 1rem;
+  width: 40%;
+  }
+}
+/* section accueil */
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darken($light-grey, 15%);
+  img {
+    width: 10%;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+.intro {
+  background-color: $light-grey;
+  &__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1.5rem;
+    h2 {
+      margin: 0;
+    }
+    p {
+      opacity: 0.6;
+    }
+  }
+}
+.fonctionnement {
+  width: 93vw;
+  margin: 2rem auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    align-self: flex-start;
+  }
+
+}
+.fonctionnement-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $light-grey;
+  width: 90%;
+  border-radius: 15px;
+  @include box-shadow;
+  margin-bottom: 2rem;
+  &__counter {
+    border-radius: 50px;
+    background-color: $color-primary;
+    padding: 0.25rem 0.6rem;
+    color: white;
+    position: relative;
+    left: -10px;
+    font-size: 1rem;
+  }
+  &__text {
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+  &__icon {
+    font-size: 1.25rem;
+    opacity: 0.5;
+    padding-left: 1rem;
+  }
+  &--active {
+    background-color: lighten($color-primary, 35%);
+    i {
+      color: $color-primary;
+      opacity: 1;
+    }
+  }
+}
+/* section restos */
+.restos {
+  width: 100vw;
+  background-color: $light-grey;
+  h2 {
+    margin: 1rem;
+    padding-top: 2rem;
+  }
+}

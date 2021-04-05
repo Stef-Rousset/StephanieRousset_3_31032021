@@ -1,0 +1,9 @@
+.btn-rounded {
+  border-radius: 25px;
+  padding: 1rem 0.5rem;
+  color: white;
+  width: 70%;
+  border-width: 0;
+  background: linear-gradient(to right bottom, $color-secondary, $color-primary );
+  @include box-shadow;
+}
