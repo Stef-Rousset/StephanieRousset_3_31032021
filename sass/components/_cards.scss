@@ -22,10 +22,10 @@
   justify-content:space-between;
   align-items: center;
   padding: 1rem;
-  i {
-    font-size: 1.5rem;
-    opacity: 0.6;
-  }
+  // &__icon {
+  //   font-size: 1.5rem;
+  //   opacity: 0.6;
+  // }
   &__text {
     h3 {
       margin-block-start: 0;
@@ -37,4 +37,23 @@
       opacity: 0.6;
     }
   }
+}
+.card-infos__checkbox {
+  font-size: 1.5rem;
+  cursor: pointer;
+  .unchecked {
+    opacity: 0.6;
+  }
+  .checked {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .checked {
+    display: block;
+    color: $color-primary;
+    opacity: 1;
+  }
+  input[type="checkbox"]:checked ~ .unchecked {
+    display: none;
+  }
+
 }
