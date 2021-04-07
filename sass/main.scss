@@ -1,5 +1,9 @@
 //Import scss files
-@import "config";
-@import "index";
-
+@import "utils/config";
+@import "utils/variables";
+@import "utils/mixins";
+@import "components/buttons";
+@import "components/cards";
+@import "pages/index";
+@import "layout/footer";
 

@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  background-color: darken($light-grey, 75%);
+  color: white;
+  h2 {
+    font-style: italic;
+    margin: 1rem;
+  }
+}
+.footer-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  i {
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+}

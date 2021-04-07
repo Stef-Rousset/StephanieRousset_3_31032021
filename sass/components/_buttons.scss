@@ -1,0 +1,13 @@
+.btn-rounded {
+  border-radius: 25px;
+  padding: 1rem 0.5rem;
+  color: white;
+  width: 70%;
+  border-width: 0;
+  background: linear-gradient(to right bottom, $color-secondary, $color-primary );
+  @include box-shadow;
+  &:hover {
+    background: linear-gradient(to right bottom, lighten($color-secondary, 3%), lighten($color-primary, 3%) );
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.4);
+  }
+}
