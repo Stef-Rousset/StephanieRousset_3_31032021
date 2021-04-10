@@ -1,8 +1,43 @@
+.palette-img {
+  background-image: url("../images/palette.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 35vh;
+  margin: 0;
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+}
+.menu {
+  background-color: $light-grey;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  top: 190px;
+  z-index: 2;
+}
+.menu-container {
+  width: 90vw;
+  margin: 0 auto;
+  button {
+    width: 50%;
+    margin: 2rem 5rem;
+  }
+}
 .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1.5rem;
   i {
     font-size: 1.5rem;
   }
+  h1 {
+    font-family: $title-font;
+  }
+}
+.footer-menu {
+  position: relative;
+  top: 140px;
 }
