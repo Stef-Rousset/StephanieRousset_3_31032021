@@ -3,10 +3,10 @@
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 35vh;
+  height: 36vh;
   margin: 0;
-  position: absolute;
-  top: 60px;
+  position: relative;
+  top: 23px;
   z-index: 1;
 }
 .menu {
@@ -14,15 +14,26 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
-  top: 190px;
+  top: 0;
   z-index: 2;
 }
 .menu-container {
-  width: 90vw;
+  width: 92vw;
   margin: 0 auto;
   button {
     width: 50%;
     margin: 2rem 5rem;
+  }
+  h3 {
+    padding-bottom: 0.5rem;
+    opacity: 0.6;
+    &::after {
+      content:'';
+      display: block;
+      padding-top: 0.5rem;
+      border-bottom: 3px solid $color-ternary;
+      width: 15%;
+    }
   }
 }
 .title {
@@ -38,6 +49,5 @@
   }
 }
 .footer-menu {
-  position: relative;
-  top: 140px;
+  margin-top: 0;
 }

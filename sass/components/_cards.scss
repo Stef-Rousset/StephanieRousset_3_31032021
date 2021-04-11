@@ -65,10 +65,13 @@
     p {
       margin: 0.25rem 0;
       font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &--lighter {
       opacity: 0.6;
-      width: 90%;
+      width: 85%;
     }
     &--bold {
       font-weight: bold;
