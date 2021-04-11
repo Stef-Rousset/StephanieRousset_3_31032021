@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+  margin: 1rem;
+  width: 40%;
+  }
+  a {
+    font-size: 1.5rem;
+    color: black;
+    position: relative;
+    left: -50px;
+  }
+}
