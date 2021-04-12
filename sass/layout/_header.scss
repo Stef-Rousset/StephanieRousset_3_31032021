@@ -13,3 +13,12 @@ header {
     left: -50px;
   }
 }
+header > img {
+  @include tablet-portrait {
+    width: 25%;
+    }
+  @include large-device {
+    width: 20%;
+  }
+}
+

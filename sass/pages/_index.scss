@@ -1,4 +1,3 @@
-
 /* section accueil */
 .localisation {
   display: flex;
@@ -86,4 +85,17 @@
     margin: 1rem;
     padding-top: 2rem;
   }
+}
+/* Medium devices (tablets portrait, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  * {
+    box-sizing: border-box;
+  }
+}
+/*Large devices (tablets landscape, desktops, 992px and up)*/
+@media (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+  }
+
 }
