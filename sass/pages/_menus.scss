@@ -1,5 +1,4 @@
-.palette-img {
-  background-image: url("../images/palette.jpg");
+.menu-img {
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -8,7 +7,20 @@
   position: relative;
   top: 23px;
   z-index: 1;
+  &--delice {
+    background-image: url("../images/delice.jpg");
+  }
+  &--palette {
+    background-image: url("../images/palette.jpg");
+  }
+  &--note {
+    background-image: url("../images/note.jpg");
+  }
+  &--francaise {
+    background-image: url("../images/francaise.jpg");
+  }
 }
+
 .menu {
   background-color: $light-grey;
   border-top-left-radius: 30px;
