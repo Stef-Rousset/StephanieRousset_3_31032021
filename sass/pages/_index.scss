@@ -1,3 +1,71 @@
+/* loader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.loader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  &__el {
+    font-size: 20px;
+    opacity: 0;
+    display: inline-block;
+    color: $color-primary;
+    animation: begin-loading 0ms 3s backwards;
+    @for $i from 1 through 6 {
+      &--#{$i} {
+        animation: inner-loader 3s ease-in-out;
+        animation-delay: $anim-delay / $i;
+      }
+    }
+  }
+}
+@keyframes inner-loader {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+@keyframes begin-loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes end-loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.accueil, .restos, header, footer {
+  animation: end-loading 300ms 3s ease-in-out both;
+}
 /* section accueil */
 .localisation {
   display: flex;
@@ -98,6 +166,9 @@
   * {
     box-sizing: border-box;
   }
+  .loader-inner__el {
+    font-size: 2rem;
+  }
   .localisation img {
     width: 9%;
   }
@@ -115,6 +186,9 @@
 @media (min-width: 992px) {
   * {
     box-sizing: border-box;
+  }
+  .loader-inner__el {
+    font-size: 2.5rem;
   }
   .localisation {
     height: 10vh;
