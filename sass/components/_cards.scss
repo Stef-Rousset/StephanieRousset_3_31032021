@@ -75,6 +75,11 @@
   border-radius: 20px;
   padding: 0.75rem;
   margin-bottom: 1rem;
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}){
+      animation: card-move 800ms $anim-delay / 2 *$i ease-in-out both;
+    }
+  }
   &__text {
     display: flex;
     justify-content: space-between;
@@ -95,5 +100,15 @@
   }
   h4 {
     margin: 0;
+  }
+}
+@keyframes card-move {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
