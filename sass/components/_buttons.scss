@@ -1,7 +1,9 @@
 .btn-rounded {
+  display: block;
   border-radius: 25px;
   padding: 1rem 0.5rem;
   color: white;
+  font-size: 1rem;
   width: 70%;
   border-width: 0;
   background: linear-gradient(to right bottom, $color-secondary, $color-primary );
@@ -10,4 +12,29 @@
     background: linear-gradient(to right bottom, lighten($color-secondary, 3%), lighten($color-primary, 3%) );
     box-shadow: 2px 4px 4px rgba(0,0,0,0.4);
   }
+  @include tablet-portrait {
+    font-size: 1.25rem;
+  }
+  @include large-device {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 45%;
+  }
+  &--menu {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    @include tablet-portrait {
+    font-size: 1.25rem;
+    margin: auto;
+    margin-top: 2rem;
+    width: 33%;
+    text-align: center;
+    }
+    @include large-device {
+    width: 25%;
+    }
+  }
 }
+

@@ -1,5 +1,5 @@
 /* cards page d'accueil */
-.restos-card {
+.restos-cards__card {
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -16,6 +16,13 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
+  }
+  @include tablet-portrait {
+    width: 85vw;
+    margin: 2rem auto;
+  }
+  @include large-device {
+    width: 40vw;
   }
 }
 .card-infos {
