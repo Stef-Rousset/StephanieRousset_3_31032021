@@ -5,7 +5,7 @@
   align-items: center;
   background-color: darken($light-grey, 6%);
   img {
-    width: 10%;
+    width: 12%;
   }
   p {
     font-weight: bold;
@@ -40,7 +40,13 @@
   h2 {
     align-self: flex-start;
   }
-
+}
+.fonctionnement-cards {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fonctionnement-card {
   display: flex;
@@ -69,7 +75,7 @@
     opacity: 0.5;
     padding-left: 1rem;
   }
-  &--active {
+  &:hover {
     background-color: lighten($color-primary, 35%);
     i {
       color: $color-primary;
@@ -81,6 +87,7 @@
 .restos {
   width: 100vw;
   background-color: $light-grey;
+  padding-bottom: 2rem;
   h2 {
     margin: 1rem;
     padding-top: 2rem;
@@ -91,11 +98,54 @@
   * {
     box-sizing: border-box;
   }
+  .localisation img {
+    width: 9%;
+  }
+  .intro__text {
+    padding: 2rem 1.5rem;
+  }
+  .fonctionnement-card {
+    width: 65%;
+  }
+  .restos h2 {
+    margin: 2rem;
+  }
 }
 /*Large devices (tablets landscape, desktops, 992px and up)*/
 @media (min-width: 992px) {
   * {
     box-sizing: border-box;
   }
-
+  .localisation {
+    height: 10vh;
+    img {
+      width: 7%;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .intro__text {
+    padding: 2rem;
+  }
+  .fonctionnement h2 {
+    margin-bottom: 2.5rem;
+  }
+  .fonctionnement-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+  }
+  .fonctionnement-card {
+    width: 30%;
+  }
+  .restos h2 {
+    margin: 2.5rem;
+  }
+  .restos-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
 }

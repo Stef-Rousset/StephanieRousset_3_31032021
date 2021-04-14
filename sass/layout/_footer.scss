@@ -1,10 +1,10 @@
 footer {
   background-color: darken($light-grey, 75%);
   color: white;
-  margin-top: 3rem;
   h2 {
     font-family: $title-font;
     padding: 1rem;
+    margin: 0;
     @include tablet-portrait {
       text-align: center;
     }
@@ -29,7 +29,7 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
-    width: 90vw;
+    width: 75vw;
     margin: 0 auto;
   }
   &__card {
@@ -43,11 +43,15 @@ footer {
     }
     @include large-device {
       margin-left: 0;
+      padding: 1.5rem 0;
     }
     a {
       color: white;
       text-decoration: none;
       font-size: 1.2rem;
+    }
+    a:hover {
+      color: lighten($color-primary, 20%);
     }
     i {
       margin-right: 0.5rem;
@@ -63,12 +67,16 @@ footer {
     }
     @include large-device {
       margin-left: 0;
+      padding: 1.5rem 0;
     }
     a {
       color: white;
       text-decoration: none;
       font-size: 1.2rem;
       margin-bottom: 0.25rem;
+    }
+    a:hover {
+      color: lighten($color-primary, 20%);
     }
   }
 }
