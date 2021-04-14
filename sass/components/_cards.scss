@@ -54,10 +54,19 @@
   input[type="checkbox"]:checked ~ .checked {
     display: block;
     color: $color-primary;
-    opacity: 1;
+    animation: heart-fill 1s ease-in-out forwards;
+    // opacity: 1;
   }
   input[type="checkbox"]:checked ~ .unchecked {
     display: none;
+  }
+}
+@keyframes heart-fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /* cards pages des menus */
