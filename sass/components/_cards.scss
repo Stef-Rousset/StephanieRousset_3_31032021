@@ -54,7 +54,7 @@
   input[type="checkbox"]:checked ~ .checked {
     display: block;
     color: $color-primary;
-    animation: heart-fill 1s ease-in-out forwards;
+    animation: heart-fill 1s ease-in-out both;
     // opacity: 1;
   }
   input[type="checkbox"]:checked ~ .unchecked {
@@ -63,7 +63,7 @@
 }
 @keyframes heart-fill {
   from {
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
     opacity: 1;
