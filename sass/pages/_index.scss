@@ -63,6 +63,9 @@
     opacity: 1;
   }
 }
+.header-index__banner {
+    display: none;
+}
 .accueil, .restos, .header-index, .footer-index {
   animation: end-loading 300ms 3s ease-in-out both;
 }
@@ -169,6 +172,9 @@
   .loader-inner__el {
     font-size: 2rem;
   }
+  .header-index__banner {
+    display: none;
+  }
   .localisation img {
     width: 9%;
   }
@@ -189,6 +195,27 @@
   }
   .loader-inner__el {
     font-size: 2.5rem;
+  }
+  .header-index {
+    #logo {
+      display: none;
+    }
+    &__banner {
+      display: block;
+      background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1614706250649-b5ccfc837688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');
+      background-position: center;
+      background-size: cover;
+      width: 100vw;
+      height: 30vh;
+      h1 {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        font-family: $title-font;
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 5rem;
+      }
+    }
   }
   .localisation {
     height: 10vh;
