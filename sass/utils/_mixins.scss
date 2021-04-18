@@ -3,7 +3,7 @@
 }
 
 /* Medium devices (tablets portrait, 768px and up)*/
-@mixin tablet-portrait {
+@mixin tablet {
   @media (min-width: 768px) and (max-width: 991px) {
     @content;
   }

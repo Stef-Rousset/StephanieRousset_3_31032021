@@ -5,7 +5,7 @@ footer {
     font-family: $title-font;
     padding: 1rem;
     margin: 0;
-    @include tablet-portrait {
+    @include tablet {
       text-align: center;
     }
     @include large-device {
@@ -18,7 +18,7 @@ footer {
   flex-direction: column;
   width: 100vw;
   padding-bottom: 1.5rem;
-  @include tablet-portrait {
+  @include tablet {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
@@ -38,7 +38,7 @@ footer {
     align-items: center;
     margin-left: 1rem;
     margin-bottom: 0.25rem;
-    @include tablet-portrait {
+    @include tablet {
       margin-left: 0;
     }
     @include large-device {
@@ -62,7 +62,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
-    @include tablet-portrait {
+    @include tablet {
       margin-left: 0;
     }
     @include large-device {

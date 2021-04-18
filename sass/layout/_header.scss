@@ -14,7 +14,7 @@ header {
   }
 }
 header > img {
-  @include tablet-portrait {
+  @include tablet {
     width: 25%;
     }
   @include large-device {
