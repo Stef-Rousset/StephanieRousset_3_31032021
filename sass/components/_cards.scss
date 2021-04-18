@@ -19,6 +19,7 @@
   }
   &:hover {
     opacity: 0.9;
+    -webkit-tap-highlight-color: transparent; // enlever le blue effect
   }
 }
 .card-nouveau {
@@ -150,6 +151,7 @@
     }
   }
   &:hover, &:focus, &:active {
+    -webkit-tap-highlight-color: transparent;
     .dishes-card-check {
       transform: scaleX(1);
       .dishes-card-check__icon {
