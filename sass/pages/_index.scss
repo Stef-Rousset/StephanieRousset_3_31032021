@@ -18,23 +18,23 @@
     display: inline-block;
     color: $color-primary;
     animation: begin-loading 0ms 3s backwards;
-    // @for $i from 1 through 6 {
-    //   &--#{$i} {
-    //     animation: loading 3s ease-in-out;
-    //     animation-delay: $anim-delay / $i ;
-    //   }
+    @for $i from 1 through 6 {
+      &--#{$i} {
+        animation: inner-loader 3s ease-in-out;
+        animation-delay: $anim-delay / $i ;
+      }
+    }
+    // &:first-child {
+    //   margin-right: 3rem;
+    //   animation: loading 1500ms ease-in;
+    //   animation-delay: $anim-delay / 2 ;
+    //   animation-iteration-count: 2;
     // }
-    &:first-child {
-      margin-right: 3rem;
-      animation: loading 3s ease-in-out backwards;
-      animation-delay: $anim-delay / 2 ;
-      animation-duration-count: 3;
-    }
-    &:last-child {
-      animation: loading-reverse 3s ease-in-out backwards;
-      animation-delay: $anim-delay / 2 ;
-      animation-duration-count: 3;
-    }
+    // &:last-child {
+    //   animation: loading 1500ms ease-in;
+    //   animation-delay: $anim-delay * 3 ;
+    //   animation-iteration-count: 2;
+    // }
   }
 }
 @keyframes inner-loader {
@@ -55,34 +55,21 @@
     transform: translateX(300px);
   }
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(2);
-  }
-  50%, 100% {
-    opacity: 1;
-    transform: scale(2) rotate(1turn);
-  }
-}
-@keyframes loading-reverse {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(2);
-  }
-  50%, 100% {
-    opacity: 1;
-    transform: scale(2) rotate(-1turn);
-  }
-}
+// @keyframes loading {
+//   0% {
+//     opacity: 0;
+//     transform: scale(0);
+//   }
+//   50% {
+//     opacity: 1;
+//     transform: scale(2);
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: scale(4) ;
+//   }
+// }
+
 @keyframes begin-loading {
   from {
     opacity: 1;
@@ -244,19 +231,23 @@
   .intro__text {
     padding: 2rem;
   }
+  .fonctionnement {
+    width: 100vw;
+  }
   .fonctionnement h2 {
+    margin-left: 2rem;
     margin-bottom: 2.5rem;
   }
   .fonctionnement-cards {
     flex-direction: row;
     justify-content: space-between;
-    width: 96%;
+    width: 90%;
   }
   .fonctionnement-card {
     width: 30%;
   }
   .restos h2 {
-    margin: 2.5rem;
+    margin: 0 0 0 2rem;
   }
   .restos-cards {
     display: flex;
