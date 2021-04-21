@@ -4,3 +4,8 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-ternary: #99E2D0;
 $anim-delay: 400ms;
+
+// Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+$title-font: 'Shrikhand', cursive;
+$text-font: 'Roboto', sans-serif;
