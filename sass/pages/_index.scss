@@ -18,11 +18,22 @@
     display: inline-block;
     color: $color-primary;
     animation: begin-loading 0ms 3s backwards;
-    @for $i from 1 through 6 {
-      &--#{$i} {
-        animation: inner-loader 3s ease-in-out;
-        animation-delay: $anim-delay / $i ;
-      }
+    // @for $i from 1 through 6 {
+    //   &--#{$i} {
+    //     animation: loading 3s ease-in-out;
+    //     animation-delay: $anim-delay / $i ;
+    //   }
+    // }
+    &:first-child {
+      margin-right: 3rem;
+      animation: loading 3s ease-in-out backwards;
+      animation-delay: $anim-delay / 2 ;
+      animation-duration-count: 3;
+    }
+    &:last-child {
+      animation: loading-reverse 3s ease-in-out backwards;
+      animation-delay: $anim-delay / 2 ;
+      animation-duration-count: 3;
     }
   }
 }
@@ -44,24 +55,34 @@
     transform: translateX(300px);
   }
 }
-// @keyframes loading {
-//   0% {
-//     opacity: 0;
-//     transform: scale(0);
-//   }
-//   30% {
-//     opacity: 1;
-//     transform: scale(1.5);
-//   }
-//   50% {
-//     opacity: 0;
-//     transform: scale(3);
-//   }
-//   100% {
-//     opacity: 0;
-//     transform: scale(2);
-//   }
-// }
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  50%, 100% {
+    opacity: 1;
+    transform: scale(2) rotate(1turn);
+  }
+}
+@keyframes loading-reverse {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  50%, 100% {
+    opacity: 1;
+    transform: scale(2) rotate(-1turn);
+  }
+}
 @keyframes begin-loading {
   from {
     opacity: 1;
@@ -211,27 +232,6 @@
   .loader-inner__el {
     font-size: 2.5rem;
   }
-  // .header-index {
-  //   #logo {
-  //     display: none;
-  //   }
-  //   &__banner {
-  //     display: block;
-  //     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1614706250649-b5ccfc837688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');
-  //     background-position: center;
-  //     background-size: cover;
-  //     width: 100vw;
-  //     height: 30vh;
-  //     h1 {
-  //       color: white;
-  //       text-shadow: 1px 1px 2px black;
-  //       font-family: $title-font;
-  //       font-size: 4rem;
-  //       text-align: center;
-  //       margin-top: 5rem;
-  //     }
-  //   }
-  // }
   .localisation {
     height: 10vh;
     img {
