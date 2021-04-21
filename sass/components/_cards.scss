@@ -19,6 +19,7 @@
   }
   &:hover {
     opacity: 0.9;
+    -webkit-tap-highlight-color: transparent; // enlever le blue effect
   }
 }
 .card-nouveau {
@@ -52,6 +53,7 @@
     color: darken($color-ternary, 30%);
     font-weight: bold;
     text-align: center;
+    border-radius: 5px;
     width: 25%;
     padding: 0.5rem;
     position: relative;
@@ -91,6 +93,7 @@
     opacity: 0.6;
     position: relative;
     z-index: 1;
+    left: 30px;
     &:hover {
       opacity: 0;
     }
@@ -101,7 +104,6 @@
   }
   .checked {
     position: relative;
-    left: -29px;
     z-index: -1;
     opacity: 0;
   }
@@ -150,6 +152,7 @@
     }
   }
   &:hover, &:focus, &:active {
+    -webkit-tap-highlight-color: transparent;
     .dishes-card-check {
       transform: scaleX(1);
       .dishes-card-check__icon {
