@@ -22,7 +22,7 @@
     -webkit-tap-highlight-color: transparent; // enlever le blue effect
   }
 }
-.card-nouveau {
+.card-image {
   height: 80%;
   background-color: $color-ternary;
   color: darken($color-ternary, 30%);
@@ -99,7 +99,7 @@
     }
     &:hover + .checked {
       color: $color-primary;
-      animation: heart-fill 1s ease-in-out both;
+      animation: heart-fill 1s ease-in-out forwards;
     }
   }
   .checked {
@@ -151,7 +151,7 @@
       animation: card-move 800ms $anim-delay / 2 *$i ease-in-out both;
     }
   }
-  &:hover, &:focus, &:active {
+  &:hover, &:active {
     -webkit-tap-highlight-color: transparent;
     .dishes-card-check {
       transform: scaleX(1);
@@ -183,8 +183,8 @@
 .dishes-card-container {
   padding: 0.75rem;
   width: 90%;
-  position: absolute;
-  z-index: 2;
+  // position: absolute;
+  // z-index: 2;
   transition: width 1000ms;
   @include tablet {
       width: 100%;
@@ -234,7 +234,7 @@
   transform-origin: right;
   position: absolute;
   left: 80%;
-  z-index: 1;
+  // z-index: 1;
   &__icon {
     transform: rotate(-360deg);
     transition: all 500ms;
