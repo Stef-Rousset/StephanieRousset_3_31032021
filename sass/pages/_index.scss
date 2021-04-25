@@ -24,17 +24,6 @@
         animation-delay: $anim-delay / $i ;
       }
     }
-    // &:first-child {
-    //   margin-right: 3rem;
-    //   animation: loading 1500ms ease-in;
-    //   animation-delay: $anim-delay / 2 ;
-    //   animation-iteration-count: 2;
-    // }
-    // &:last-child {
-    //   animation: loading 1500ms ease-in;
-    //   animation-delay: $anim-delay * 3 ;
-    //   animation-iteration-count: 2;
-    // }
   }
 }
 @keyframes inner-loader {
@@ -55,21 +44,6 @@
     transform: translateX(300px);
   }
 }
-// @keyframes loading {
-//   0% {
-//     opacity: 0;
-//     transform: scale(0);
-//   }
-//   50% {
-//     opacity: 1;
-//     transform: scale(2);
-//   }
-//   100% {
-//     opacity: 0;
-//     transform: scale(4) ;
-//   }
-// }
-
 @keyframes begin-loading {
   from {
     opacity: 1;
@@ -163,6 +137,7 @@
   &__text {
     font-weight: bold;
     padding-left: 1rem;
+    font-size: 1.1rem;
   }
   &__icon {
     font-size: 1.25rem;
@@ -206,6 +181,9 @@
   }
   .fonctionnement-card {
     width: 65%;
+    &__text {
+    font-size: 1.3rem;
+    }
   }
   .restos h2 {
     margin: 2rem;
@@ -245,6 +223,9 @@
   }
   .fonctionnement-card {
     width: 30%;
+    &__text {
+    font-size: 1.3rem;
+    }
   }
   .restos h2 {
     margin: 0 0 0 2rem;
