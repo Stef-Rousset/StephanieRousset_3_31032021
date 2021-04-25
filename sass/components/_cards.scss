@@ -70,7 +70,7 @@
 }
 .card-infos {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   &__text {
@@ -116,26 +116,6 @@
     opacity: 1;
   }
 }
-// .card-infos__checkbox {
-//   font-size: 1.5rem;
-//   cursor: pointer;
-//   .unchecked {
-//     opacity: 0.6;
-//   }
-//   .checked {
-//     display: none;
-//   }
-//   input[type="checkbox"]:checked ~ .checked {
-//     display: block;
-//     color: $color-primary;
-//     animation: heart-fill 1s ease-in-out both;
-//     // opacity: 1;
-//   }
-//   input[type="checkbox"]:checked ~ .unchecked {
-//     display: none;
-//   }
-// }
-
 /* cards pages des menus */
 .dishes-card {
   background-color: white;
@@ -183,8 +163,6 @@
 .dishes-card-container {
   padding: 0.75rem;
   width: 90%;
-  // position: absolute;
-  // z-index: 2;
   transition: width 1000ms;
   @include tablet {
       width: 100%;
@@ -234,7 +212,6 @@
   transform-origin: right;
   position: absolute;
   left: 80%;
-  // z-index: 1;
   &__icon {
     transform: rotate(-360deg);
     transition: all 500ms;
