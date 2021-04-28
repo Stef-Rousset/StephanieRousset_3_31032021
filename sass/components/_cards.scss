@@ -138,7 +138,13 @@
     }
     .dishes-card-check__icon {
         // transform: rotate(0deg);
-        animation: check-icon 600ms linear forwards;
+        animation: check-icon-mobile 600ms linear forwards;
+        @include tablet {
+          animation: check-icon 600ms linear forwards;
+        }
+        @include large-device {
+          animation: check-icon 600ms linear forwards;
+        }
     }
     .dishes-card-container {
       width: 70%;
@@ -262,12 +268,26 @@
     transform:  translateX(30px);
   }
   80% {
-    opacity: 1;
+    opacity: 0.7;
     transform:  translateX(60px);
   }
   100% {
     opacity: 0;
     transform: translateX(90px);
+  }
+}
+@keyframes check-icon-mobile {
+  0% {
+    opacity: 0;
+    transform:  translateX(50px) rotate(-360deg);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(30px) rotate(-288deg);
+  }
+  100% {
+    opacity: 1;
+    transform:  translateX(0px) rotate(0deg);
   }
 }
 @keyframes check-icon-reverse-mobile {
@@ -276,10 +296,10 @@
     transform:  translateX(0px);
   }
   30% {
-    opacity: 0.8;
+    opacity: 0.5;
     transform:  translateX(20px);
   }
-  60%, 100% {
+  50%, 100% {
     opacity: 0;
     transform: translateX(90px);
   }
